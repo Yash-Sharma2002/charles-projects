@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/* for country flags */
+@font-face {
+  font-family: NotoColorEmojiLimited;
+  unicode-range: U+1F1E6-1F1FF;
+  src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+}
+
+
+.country-flag {
+  font-family: "NotoColorEmojiLimited", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+  background-color: white!important ;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.react-datepicker__input-container input{
+  background-color: white;
+}
+
+input:-internal-autofill-selected {
+  appearance: none !important;
+  background-color: #86b7fe !important;
+  color: #333 !important;
+}
+
+input:focus{
+  box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+  border: #86b7fe;
+  outline: 0;
+}
